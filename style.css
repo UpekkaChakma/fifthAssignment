@@ -1,0 +1,41 @@
+#white-text{
+    color: white;
+    font-size: large;
+}
+.bigger-size-input{
+    padding-right: 150px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-color: rgb(243, 241, 232);
+
+}
+.input-search-container{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 30%;
+}
+.myMealsDiv{
+    color: white;
+    background-color: rgb(204, 154, 89);
+    box-shadow: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div img {
+    width: 100%;
+    border-radius: 10px;
+}
+#searchedMealList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin: 10px;
+}
+#mealIngredientDiv{
+    width: 40%;
+    margin-left: 30%;
+    background-color: rgb(245, 239, 227);
+}
+
+
