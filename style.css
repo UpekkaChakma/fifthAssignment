@@ -27,6 +27,7 @@ div img {
     border-radius: 10px;
 }
 #searchedMealList{
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
@@ -34,8 +35,7 @@ div img {
 }
 #mealIngredientDiv{
     width: 40%;
+    margin-top: 20px;
     margin-left: 30%;
     background-color: rgb(245, 239, 227);
 }
-
-
