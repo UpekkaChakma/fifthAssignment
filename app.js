@@ -1,4 +1,3 @@
-
 const inputFirstLetter = () => {
     const input = document.getElementById("inputText").value;
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`
@@ -9,6 +8,7 @@ const inputFirstLetter = () => {
 }
     const displaySearchedResult = meals => {
     const mealsDiv = document.getElementById("searchedMealList");
+    mealsDiv.innerHTML = "";
     meals.forEach( meal => {
         const mealDiv = document.createElement("div");
         mealDiv.className = 'myMealsDiv';
@@ -27,8 +27,7 @@ const mealIngredient = mealName => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`;
     fetch(url)
     .then(response => response.json())
-
-     .then(data => mealIngredientDetails(data.meals[0]));
+    .then(data => mealIngredientDetails(data.meals[0]));
  }
 const mealIngredientDetails = meals => {
     const ingredientDiv =document.getElementById('mealIngredientDiv');
