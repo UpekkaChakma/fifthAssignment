@@ -7,6 +7,9 @@ const inputFirstLetter = () => {
     if (singleChar.length > 1) {
         document.getElementById('mealIngredientDiv').innerHTML = 'No results Found';
     }
+    else if (singleChar.length === 0) {
+        document.getElementById('mealIngredientDiv').innerHTML = 'Please input a single letter for searching meals';
+    }
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`
     fetch(url)
     .then(response => response.json())
