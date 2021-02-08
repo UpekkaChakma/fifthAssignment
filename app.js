@@ -36,15 +36,15 @@ const mealIngredientDetails = meals => {
         <img src = "${meals.strMealThumb}">
         <h3>${meals.strMeal}</h3>
         <h4>Ingredients</h4>
-        <p>${meals.strIngredient1}</p>
-        <p>${meals.strIngredient2}</p>
-        <p>${meals.strIngredient3}</p>
-        <p>${meals.strIngredient4}</p>
-        <p>${meals.strIngredient5}</p>
-        <p>${meals.strIngredient6}</p>
-        <p>${meals.strIngredient7}</p>
-        <p>${meals.strIngredient8}</p>
-        <p>${meals.strIngredient9}</p>
-        <p>${meals.strIngredient10}</p>
+        <li>${meals.strIngredient1}</li>
+        <li>${meals.strIngredient2}</li>
+        <li>${meals.strIngredient3}</li>
+        <li>${meals.strIngredient4}</li>
+        <li>${meals.strIngredient5}</li>
+        <li>${meals.strIngredient6}</li>
+        <li>${meals.strIngredient7}</li>
+        <li>${meals.strIngredient8}</li>
+        <li>${meals.strIngredient9}</li>
+        <li>${meals.strIngredient10}</li>
     `
 }
