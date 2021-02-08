@@ -1,6 +1,10 @@
 // search meals by first letter
 const inputFirstLetter = () => {
     const input = document.getElementById("inputText").value;
+    const singleChar = [...input];
+    if (singleChar.length > 1) {
+        document.getElementById('mealIngredientDiv').innerHTML = 'No results Found';
+    }
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`
     fetch(url)
     .then(response => response.json())
