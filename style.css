@@ -39,3 +39,6 @@ div img {
     margin-left: 30%;
     background-color: rgb(245, 239, 227);
 }
+li{
+    list-style: none;
+}
