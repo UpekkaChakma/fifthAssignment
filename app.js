@@ -10,7 +10,7 @@ const inputFirstLetter = () => {
 // display searched results    
     const displaySearchedResult = meals => {
     const mealsDiv = document.getElementById("searchedMealList");
-    mealsDiv.innerHTML = "";
+    mealsDiv.innerHTML = '';
     meals.forEach( meal => {
         const mealDiv = document.createElement("div");
         mealDiv.className = 'myMealsDiv';
