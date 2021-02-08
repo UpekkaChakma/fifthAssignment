@@ -11,6 +11,7 @@ const inputFirstLetter = () => {
     const displaySearchedResult = meals => {
     const mealsDiv = document.getElementById("searchedMealList");
     mealsDiv.innerHTML = '';
+    document.getElementById('mealIngredientDiv').innerHTML = '';
     meals.forEach( meal => {
         const mealDiv = document.createElement("div");
         mealDiv.className = 'myMealsDiv';
