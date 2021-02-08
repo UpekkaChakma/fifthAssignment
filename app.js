@@ -1,5 +1,7 @@
 // search meals by first letter
 const inputFirstLetter = () => {
+    document.getElementById("searchedMealList").innerHTML = '';
+    document.getElementById('mealIngredientDiv').innerHTML = '';
     const input = document.getElementById("inputText").value;
     const singleChar = [...input];
     if (singleChar.length > 1) {
@@ -14,8 +16,6 @@ const inputFirstLetter = () => {
 // display searched results    
     const displaySearchedResult = meals => {
     const mealsDiv = document.getElementById("searchedMealList");
-    mealsDiv.innerHTML = '';
-    document.getElementById('mealIngredientDiv').innerHTML = '';
     meals.forEach( meal => {
         const mealDiv = document.createElement("div");
         mealDiv.className = 'myMealsDiv';
