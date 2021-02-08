@@ -1,18 +1,19 @@
+// search meals by first letter
 const inputFirstLetter = () => {
     const input = document.getElementById("inputText").value;
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?f=${input}`
     fetch(url)
     .then(response => response.json())
     .then(data => displaySearchedResult(data.meals));
-    document.getElementById("inputText").value = "";
+     document.getElementById("inputText").value = "";
 }
+// display searched results    
     const displaySearchedResult = meals => {
     const mealsDiv = document.getElementById("searchedMealList");
     mealsDiv.innerHTML = "";
     meals.forEach( meal => {
         const mealDiv = document.createElement("div");
         mealDiv.className = 'myMealsDiv';
-
         const mealInfo = `
         <div onclick = "mealIngredient('${meal.strMeal}')">
         <img src = "${meal.strMealThumb}">
@@ -23,6 +24,8 @@ const inputFirstLetter = () => {
         mealsDiv.appendChild(mealDiv);
     });
 }
+
+// showing clicked meal ingredients
 const mealIngredient = mealName => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`;
     fetch(url)
